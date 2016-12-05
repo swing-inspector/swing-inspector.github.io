@@ -1,0 +1,2 @@
+# swing-inspector
+SwingInspector是一个Java Swing/AWT用户界面分析和调试工具，功能与firebug类似，具有强大的Swing/AWT用户界面分析和调试相关功能。 适用于从java swing初级到高级的所有开发人员。能够快速定位问题、UI快速调试及级分析基于Java Swing/AWT技术的软件界面的实现原理。能够给开发工作效率带来大幅提升。

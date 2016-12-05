@@ -1,0 +1,418 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>SwingInspector</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 9.00.8112.16464">
+<style type="text/css">
+<!--
+.STYLE1 {color: #FF0000}
+-->
+</style>
+</HEAD>
+<BODY>
+<SPAN  
+>
+<P align=right><A href="./index.htm">Chinese</A>|<A 
+href="./index_en.htm">English</A><BR>
+</P>
+<P><STRONG>SwingInspector 1.2.3 for Windows / Mac OS X / Linux</STRONG></P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>The SwingInspector is a Java 
+		Swing/AWT user interface analysis and debugging tools. It likes 
+		firebug, Having powerful Swing/AWT user interface analysis and debugging 
+		functions. Applicable to all of Java Swing developers from beginner to advanced 
+		java swing can quickly locate the problem, UI rapid debugging, analysis of the 
+		realization of the principle of the software interface, able to bring 
+  development work efficiency increased dramatically. </BLOCKQUOTE>
+<P dir=ltr>Features of the instrument </P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<OL dir=ltr>
+				<LI>
+						With the UI components linkage functions, user 
+								interface Ctrl + move the mouse, can be displayed in the the SwingInspector 
+								main interface corresponding to component information, and highlight the 
+						Component. 
+				
+				<LI>
+    				Linkage to the user interface in SwingInspector 
+    						component tree, that is, two-way linkage and does not need to provide the 
+   						source code of the interface 
+				
+				<LI>
+    				Applet support, you can locate the applet interface 
+   						embedded into any web page. 
+    		
+    		<LI>
+   						Powerful window capture function can capture the load 
+    								agent jvm created all Swing/AWT window (applets in web pages, the browser 
+						loaded applet/webstart start the console window), modal dialog. 
+    		
+    		<LI>
+    				Green, without having to install, simply add a line 
+   						parameters to the java command to start the SwingInspector. 
+    		
+    		<LI>Support the all AWT/Swing program, netbeans, 
+    				visualvm.
+   				<LI>
+   						The powerful expression support, allows to support 
+    								attribute browsing and editing of the selected group into the implementation 
+    								of the expression computing, real-time display calculation results, the 
+						result of the operation. 
+   				
+   				<LI>
+    				The powerful Javascript support functions, support 
+    						javascript in real time to modify the user interface components take effect 
+				immediately after executing the script. 
+    		<LI>The Component object creation record, tracking object creation process, and navigate directly to the line of code.
+    		<LI>Interfacial assembly record, support the assembly process of tracking user interface and navigate directly to the line of code.						
+    		<LI>
+    				High performance, the core function using c/c++, and 
+    						direct manipulation of the jvm, lazy mechanism has little effect on the 
+    						performance of the main interface, visible only updated when the refresh 
+   						components viewer. 
+    		
+    		<LI>
+    				The property editor can directly modify the properties 
+   						of selected components and the direct effect. 
+    		
+    		<LI>
+    				You can record components stacktrace, when added to the 
+   						parent can quickly navigate to the appropriate line of code. 
+    		
+    		<LI>
+    				Simple, consistent shortcut key with commonly used 
+    						software (F5 refresh, Alt + Left Back, Alt + Right forward, etc.), the 
+   						interface is very simple and intuitive, no learning costs. 
+    		
+    		<LI>    				Free, we aim to make a contribution for the development 
+				of the software industry. </LI>
+  		</OL>
+</BLOCKQUOTE>
+<P dir=ltr>Download </P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P dir=ltr><A 
+  href="download/swing-inspector-windows-1.2.3.zip">http://www.swinginspector.com/download/swing-inspector-windows-1.2.3.zip</A><BR>
+				<A 
+  href="./download/swing-inspector-macosx-1.2.3.dmg">http://www.swinginspector.com/download/swing-inspector-macosx-1.2.3.dmg<BR>
+		</A><A 
+  href="./index.htm">http://www.swinginspector.com/download/swing-inspector-linux-1.2.3.tar.gz</A></P>
+</BLOCKQUOTE>
+<P dir=ltr>Snapshots</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P dir=ltr><a href="snapshot/windows.png"><img src="snapshot/windows-min.png" width="1024" height="607" border="0"></a></P>
+		<P dir=ltr><a href="snapshot/mac.png"><IMG 
+  src="snapshot/mac-min.png" alt="" width="1024" height="640" hspace=0 border=0 align=baseline></a></P>
+		<P dir=ltr><a href="snapshot/ubuntu.png"><IMG 
+  src="snapshot/ubuntu-min.png" alt="" width="1024" height="572" hspace=0 border=0 align=baseline></a></P>
+</BLOCKQUOTE>
+<P dir=ltr>License</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P dir=ltr>SwingInspector 1.2.3 start completely free, but 
+				prohibited any commercial behavior, without consent, to sell the software in 
+				any form is prohibited. The software is tied to the company's products for sale 
+		is prohibited. </P>
+</BLOCKQUOTE>
+<P dir=ltr>SwingInspector composition </P>
+<OL style="MARGIN-RIGHT: 0px" dir=ltr>
+		<OL dir=ltr>
+				<LI> agent 
+								swing-inspector-agent.dll, tools core part, the use of the C/C + + to write 
+								injected into the jvm process monitoring jvm various operations, collect 
+								relevant data, such as: jvm start/shut down the jvm method calls, the jvm 
+								memory allocations, high draw bright areas, jvm abnormal intercept global 
+								shortcut key bindings the, Add StackTrace record, object creation the 
+								StackTrace record SwingInspector interface communication and jni interface 
+						implementation. 
+				
+				<LI> SwingInspector main 
+    						interface, written in Java Swing analysis agent to collect the data, show a 
+    						graphical interface: Component Tree provides Properties, Expressions, 
+    						Javascript, and view interface shortcuts bind and invoke the completion of 
+   						the agent in the jni related to the underlying operations. </LI>
+		</OL>
+</OL>
+<P dir=ltr>The main functions are as follows: </P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P>1.Quickly locate interface elements (Ctrl + mouse movement) </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><IMG 
+    src="image/7206512.png" width="1024" height="661"></P>
+  		</BLOCKQUOTE>
+  		<P>2.real-time modify the component properties (the current version supports simple 
+		property, such as: character, numeric, boolean) </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><IMG 
+    src="image/18159421.jpg" width="1021" height="644"></P>
+  		</BLOCKQUOTE>
+  		<P>3.Modify components preferred size </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><IMG 
+    src="image/18315999.png" width="1024" height="485"></P>
+  		</BLOCKQUOTE>
+  		<P>4.Expression support</P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><IMG 
+    src="image/19669495.png" width="0" height="0"></P>
+  		</BLOCKQUOTE>
+  		<P>5. 
+		Powerful javascript support, real-time operating interface elements </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><IMG 
+    src="image/19452419.png" width="1102" height="644"></P>
+  		</BLOCKQUOTE>
+  		<P><span id="result_box" lang="en">6.Component object to create a record and code positioning function</span></P>
+  		<P><img src="image/create-stacktrace.png" width="1070" height="642" hspace="42"></P>
+  		<P>7.Interfacial assembly information recording function </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><IMG 
+    src="image/20539388.png" width="1024" height="590"></P>
+  		</BLOCKQUOTE>
+  		<P>8.other features </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P dir=ltr><IMG 
+    src="image/25929908.png" width="845" height="600"></P>
+  		</BLOCKQUOTE>
+</BLOCKQUOTE>
+<P>Environmental requirements </P>
+<OL style="MARGIN-RIGHT: 0px" dir=ltr>
+		<OL>
+				<LI>Operating system: windows xp, 2000, 2003, vista, win7, 
+						win8 from 1.2.3 started to support the installation of the operating system 
+						in the virtual machine (virtualbox, vmware).
+				<LI>jvm: sun (oracle) java 1.6.x, 1.7.x, IBM jvm 1.6.x and 
+				1.7.x,OpenJDK 16.x and 1.7.x, other manufacturers jvm not been tested. </LI>
+  		</OL>
+</OL>
+<P>Usage </P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P style="MARGIN-RIGHT: 0px" dir=ltr>1.command line</P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><strong>Windows</strong>(x64)</P>
+    			<blockquote>
+						<p>java -agentpath:C:\swing-inspector-windows-1.2.3\<span class="STYLE1">x64</span>\swing-inspector-agent.dll -classpath xxx.jar   				xxx.xxx.Main(自己的入口类)</p>
+				</blockquote>
+    			<P><strong>Windows</strong>(32bit)</P>
+    			<blockquote>
+						<p>java -agentpath:C:\swing-inspector-windows-1.2.3\<span class="STYLE1">Win32</span>\swing-inspector-agent.dll -classpath xxx.jar   				xxx.xxx.Main</p>
+				</blockquote>
+    			<P><strong>Mac OSX</strong>(64bit)</P>
+    			<blockquote>
+						<p>java -agentpath:/Volumes/SwingInspector_1.2.3/libswing-inspector-agent.dylib -classpath SwingSet2.jar SwingSet2</p>
+				</blockquote>
+    			<P><strong></strong><strong>Linux</strong>(amd64)</P>
+    			<blockquote>
+						<p>java -agentpath:/home/manlge/swing-inspector_1.2.3/<span class="STYLE1">amd64</span>/libswing-inspector-agent.so -classpath xxx.jar xxx.xxx.Main</p>
+				</blockquote>
+    			<P><strong>Linux</strong>(32bit)</P>
+    			<blockquote>
+						<p>java -agentpath:/home/manlge/swing-inspector_1.2.3/<span class="STYLE1">i386</span>/libswing-inspector-agent.so -classpath xxx.jar xxx.xxx.Main</p>
+				</blockquote>
+    			<P><strong>example</strong></P>
+    			<blockquote>
+						<p>Windows </p>
+    					<blockquote>
+								<p>java 
+										-agentpath:C:\SwingInspector\swing-inspector-agent.dll 
+										-classpath C:\SwingSet2.jar 
+										SwingSet2</p>
+						</blockquote>
+    					<p>Mac OSX </p>
+    					<blockquote>
+								<p>java -agentpath:/Volumes/SwingInspector_1.2.3/libswing-inspector-agent.dylib -classpath SwingSet2.jar SwingSet2</p>
+						</blockquote>
+    					<p>Linux</p>
+    					<blockquote>
+								<p>java -agentpath:/home/manlge/swing-inspector/amd64/libswing-inspector-agent.so -classpath SwingSet2.jar SwingSet2</p>
+						</blockquote>
+				</blockquote>
+    			<P><BR>
+				</P>
+  		</BLOCKQUOTE>
+  		<P>2. 
+		Applet </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><IMG 
+    src="image/5122526.png" width="676" height="325"> </P>
+  		</BLOCKQUOTE>
+  		<P>3. 
+		Eclipse development swing application </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P><IMG 
+    src="image/136186657.png" width="819" height="372"> </P>
+  		</BLOCKQUOTE>
+  		<p>
+		<P>4. 
+		Jvislualvm </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P>jvisualvm.exe-J-agentpath: 
+  						C:\swing-inspector-agent\x64\Release\swing-inspector-agent.dll <BR>
+				</P>
+  		</BLOCKQUOTE>
+  		<P>5. 
+		Netbeans </P>
+  		<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<P>netbeans64.exe - locale en_US-J-agentpath: 
+				C:\swing-inspector-agent\x64\Release\swing-inspector-agent.dll </P>
+    		<P><IMG 
+    src="image/netbeans.png" alt="" width="1088" height="663" hspace=0 border=0 align=bottom></P>
+  		</BLOCKQUOTE>
+</BLOCKQUOTE>
+<P style="MARGIN-RIGHT: 0px" dir=ltr>System shortcuts </P>
+<OL dir=ltr>
+		<OL dir=ltr>
+				<LI> Ctrl + F12 Show/to hide 
+						SwingInspector window (global shortcut keys in the operating system) 
+				
+				<LI> Ctrl + mouse movement to 
+   						capture the mouse position in the user interface components 
+				
+				<LI> F5 to refresh the component 
+   						tree 					
+				<LI> Ctrl + F Find 
+				
+    			<LI> Alt + left (left arrow key) 
+   						Back 
+    			
+    			<LI> Alt + right (right arrow key) 
+   						forward 
+    			
+    			<LI> Ctrl + - to reduce window 
+   						transparency 
+    			
+    			<LI> Ctrl + + to increase the 
+   						window transparency 
+    			
+    			<LI> Ctrl + Shift + P Display 
+   						Properties page 
+    			
+    			<LI> Ctrl + Shift + E expression 
+   						page 
+    			
+    			<LI> Ctrl + Shift + J Javascript 
+   						script page 
+    			
+    			<LI> Ctrl + Shift + A to display 
+   						Add StackTrace page 
+    			
+    			<LI> F11 Executive javascript 
+   						(effective javascript page active) </LI>
+		</OL>
+</OL>
+<P style="MARGIN-RIGHT: 0px">Contact Us </P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P>If you 
+				have good suggestions for improvement, please contact us for SwingInspector. <BR>
+				mail: <A 
+  href="mailto:swinginspector@gmail.com">swinginspector@gmail.com</A> <BR>
+				Tel: 
+				18611739701 <BR>
+				QQ: 418850890<BR>
+				WeChat: 418850890 / 18611739701<BR>
+				Contact:&nbsp;Mark Liu&nbsp;<BR>
+				<A 
+  href="http://translate.googleusercontent.com/translate_c?depth=1&amp;hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;twu=1&amp;u=http://www.swinginspector.com/&amp;usg=ALkJrhjCWFaqKvlYe_MLwYSYOe72_s8mPQ">http://www.swinginspector.com/</A> <BR>
+				Address: Chaoyang 
+		District, Beijing Beiyuan homes purple ribbon Park, Building 6, </P>
+</BLOCKQUOTE>
+<P style="MARGIN-RIGHT: 0px">Other </P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P style="MARGIN-RIGHT: 0px">If the SwingInspector to save your company or personal costs, 
+				bring certain economic benefits, and I hope you can give some funding to the 
+				development of SwingInspector to promote better development of SwingInspector. </P>
+</BLOCKQUOTE>
+<P dir=ltr>Subsequent development plan </P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P dir=ltr>1.2.3 </P>
+  		<OL style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<OL dir=ltr>
+  						<LI>
+  								<DIV>Window position and load the save function </DIV>
+      		<LI>
+      				<DIV>Editor implementation of the various components, 
+      						Border, color </DIV>
+      		<LI>
+      				<DIV>Right-click on the different components of such 
+      						components actionable menu </DIV>
+      		<LI>
+      				<DIV>Preferences dialog box allows the SwingInspector 
+      						configure and enable sound </DIV>
+      		<LI>
+      				<DIV>Property editor supports filtering function (hidden 
+      						final hidden static, etc.) </DIV>
+      		</LI>
+    		</OL>
+  		</OL>
+  		<P dir=ltr>1.2.3 </P>
+</BLOCKQUOTE>
+<OL style="MARGIN-RIGHT: 0px" dir=ltr>
+		<OL>
+				<OL dir=ltr>
+						<LI>
+								<DIV>Allow Save As script, load the script saved 
+								automatically load the last saved the script </DIV>
+      		<LI>
+      				<DIV>Allow this expression is saved as a loaded 
+      						expression. </DIV>
+      		<LI>
+      				<DIV>Script Editor variable view showing the context 
+      						variables. </DIV>
+      		<LI>
+      				<DIV>Script editor syntax highlighting, code completion 
+      						functions. </DIV>
+      		<LI>
+      				<DIV>Expression supports editing dialog box, type the 
+      						input table expression long, inconvenient. <BR>
+      						</DIV>
+      		</LI>
+    		</OL>
+  		</OL>
+</OL>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+		<P dir=ltr>1.2.4 </P>
+  		<OL dir=ltr>
+  				<OL>
+  						<LI>
+  								<DIV>Set (complete package name, the status bar is 
+								displayed to console output stacktrace) </DIV>
+      		<LI>
+      				<DIV>Intercepting object is created, and record StackTrace 
+      						stacktrace view (through the parameter settings when required) </DIV>
+      		<LI>
+      				<DIV>Variable name is displayed in the component 
+      						tree </DIV>
+      		<LI>
+      				<DIV>Creating StackViewer </DIV>
+      		<LI>
+      				<DIV>Property browser can call </DIV>
+      		</LI>
+    		</OL>
+  		</OL>
+  		<P dir=ltr>1.2.5 </P>
+  		<OL dir=ltr>
+  				<OL>
+  						<LI>
+  								<DIV>International, multi-language support (currently to 
+								interface only English) </DIV>
+      		<LI>
+      				<DIV>LookAndFeel, provide multiple sets of beautiful skin 
+      						to choose </DIV>
+      		<LI>
+      				<DIV>agent Ctrl + F12 into a hook to achieve </DIV>
+      		<LI>
+      				<DIV>The floating View (like eclipse view) </DIV>
+      		</LI>
+    		</OL>
+  		</OL>
+  		<P>1.3.0 </P>
+  		<OL style="MARGIN-RIGHT: 0px" dir=ltr>
+  				<OL>
+  						<LI>agent end ported to non-windows system linux, macosx, 
+  								unix (bsd and Solaris, etc.)
+						<LI>Performance Tuning (call time network requests and 
+  										the corresponding time and data view)
+						<LI>The Reverse code generation, according to the 
+  												selected interface generates the source 
+						code.</LI>
+    		</OL>
+  		</OL>
+</BLOCKQUOTE>
+</SPAN>
+</BODY></HTML>
